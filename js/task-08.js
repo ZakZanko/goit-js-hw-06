@@ -12,7 +12,7 @@ function handleFormSubmit(e) {
     return alert("Всі поля повинні бути заповнені!");
   }
 
-  const UserLogPass = { email: email.value, password: password.value };
-  console.log(UserLogPass);
+  const userLogPass = { email: email.value, password: password.value };
+  console.log(userLogPass);
   e.currentTarget.reset();
 }

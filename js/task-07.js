@@ -3,6 +3,8 @@ const refs = {
   textEl: document.querySelector("#text"),
 };
 
-refs.inputEl.addEventListener("change", (ev) => {
+refs.inputEl.addEventListener("input", Size);
+
+function Size(ev) {
   refs.textEl.style.fontSize = `${ev.target.value}px`;
-});
+}
